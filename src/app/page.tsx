@@ -1,4 +1,5 @@
- // src/app/page.tsx
+
+// src/app/page.tsx
 import React from 'react';
 
 export default function Portfolio() {
@@ -14,8 +15,8 @@ export default function Portfolio() {
           <p className="text-4xl mt-2">I am a Web Developer</p>
         </div>
         {/* Right Side Image */}
-        <div className="w-24 h-24 rounded-full overflow-hidden">
-          <img src="/image/asma umair.png" alt="Your Name" className="w-full h-full object-cover" />
+        <div className="w-40 h-40 overflow-hidden"> {/* Made the image larger with w-40 and h-40 */}
+          <img src="/image/asma umair.png" alt="Your Name" className="w-24 h-26" />
         </div>
       </header>
 
@@ -63,6 +64,12 @@ export default function Portfolio() {
               <div className="bg-blue-500 h-2.5 rounded-full" style={{ width: '60%' }}></div>
             </div>
             <p className="text-sm text-gray-500">60%</p>
+          </div>     <div className="mb-4">
+            <p className="text-gray-700">Type Script</p>
+            <div className="w-full bg-gray-300 rounded-full h-2.5 mt-2">
+              <div className="bg-blue-500 h-2.5 rounded-full" style={{ width: '50%' }}></div>
+            </div>
+            <p className="text-sm text-gray-500">60%</p>
           </div>
 
           {/* Figma Skill */}
@@ -77,7 +84,7 @@ export default function Portfolio() {
 
         {/* Right Side Content */}
         <div className="w-3/4 p-6">
-          <h1 className="text-2xl font-bold">Welcome to My Portfolio</h1>
+          {/* Removed "Welcome to My Portfolio" */}
         </div>
       </div>
     </div>
